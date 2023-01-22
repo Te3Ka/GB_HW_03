@@ -14,3 +14,19 @@ void Author()
     Console.WriteLine("Программа создана Te3Ka_PaynE.");
     Console.WriteLine("E-mail: Mnement4813@yandex.ru");
 }
+
+double NewCoordinates(string point, string coordinate)
+{
+    Console.Write($"Введите координату {coordinate} точки {point}: = ");
+    return Convert.ToDouble(Console.ReadLine());
+}
+
+Console.WriteLine("Программа находит расстояние между двумя точкам в трёхмерном пространстве.");
+double ax, ay, az,
+    bx, by, bz;
+ax = NewCoordinates("A", "x");
+ay = NewCoordinates("A", "y");
+az = NewCoordinates("A", "z");
+bx = NewCoordinates("B", "x");
+by = NewCoordinates("B", "y");
+bz = NewCoordinates("B", "z");
