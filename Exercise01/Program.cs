@@ -38,7 +38,7 @@ string PolindromTest(int num)
 }
 
 Console.WriteLine("Программа проверяет, является ли введённого пятизначное число палиндромом.");
-Console.Write("Введите пятизначное целое число: ");
+Console.Write("Введите пятизначное целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if ((number < 10_000) || (99_999 < number))
 {
