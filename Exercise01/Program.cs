@@ -14,6 +14,12 @@
 23432 -> да
 */
 
+void Author()
+{
+    Console.WriteLine("Программа создана Te3Ka_PaynE.");
+    Console.WriteLine("E-mail: Mnement4813@yandex.ru");
+}
+
 string PolindromTest(int num)
 {
     int resNum = 0;
@@ -34,10 +40,11 @@ string PolindromTest(int num)
 Console.WriteLine("Программа проверяет, является ли введённого пятизначное число палиндромом.");
 Console.Write("Введите пятизначное целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-number = Math.Abs(number);
 if ((number < 10_000) || (99_999 < number))
 {
     Console.WriteLine("Введено недопустимое число. Выполнение программы прервано.");
     return;
 }
 Console.WriteLine($"Введённое число {number} - {PolindromTest(number)}");
+Console.WriteLine();
+Author();
