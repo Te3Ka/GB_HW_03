@@ -16,6 +16,19 @@ void Author()
     Console.WriteLine("E-mail: Mnement4813@yandex.ru");
 }
 
+void PrintTableOfCube(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        if (i == num)
+            Console.WriteLine(Math.Pow(i, 3));
+        else
+            Console.Write(Math.Pow(i, 3) + ", ");
+    }
+}
+
 Console.WriteLine("Программа показывает таблицу кубов от 1 до указанного числа");
-Console.Write("Введите число, но не более 1290: ");
-int N = Convert.ToInt32(COnsole.ReadLine());
+Console.Write("Введите число больше 1: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+PrintTableOfCube(N);
