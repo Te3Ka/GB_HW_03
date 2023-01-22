@@ -14,6 +14,27 @@
 23432 -> да
 */
 
+string PolindromTest(int num)
+{
+    int resNum = 0;
+    int temp = 0;
+    int number = num;
+    while (number > 0)
+    {
+        temp = number % 10;
+        resNum = resNum * 10 + temp;
+        number /= 10;
+        Console.WriteLine($"temp = {temp}; resNum = {resNum}; number = {number}");
+        Console.WriteLine();
+    }
+    if (resNum == num)
+        return "Да";
+    else
+        return "Нет";
+}
+
 Console.WriteLine("Программа проверяет, является ли введённого пятизначное число палиндромом.");
 Console.Write("Введите пятизначное целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(PolindromTest(number));
