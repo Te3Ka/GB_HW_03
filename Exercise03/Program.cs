@@ -16,13 +16,29 @@ void Author()
     Console.WriteLine("E-mail: Mnement4813@yandex.ru");
 }
 
-Console.WriteLine("Программа показывает таблицу кубов от 1 до указанного числа");
-Console.Write("Введите число, но не более 1290: ");
-int N = Convert.ToInt32(Console.ReadLine());
+//Вывод таблицы кубов на экран
+void PrintTableOfCube(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        if (i == num)
+            Console.WriteLine(Math.Pow(i, 3));
+        else
+            Console.Write(Math.Pow(i, 3) + ", ");
+    }
+}
 
-// Проверка введённого числа на допустимые значения
-if ((N < 1) || (N > 1290))
+Console.WriteLine("Программа показывает таблицу кубов от 1 до указанного числа");
+Console.Write("Введите число больше 1: ");
+
+//Проверка на положительное значение
+int N = Convert.ToInt32(Console.ReadLine());
+if ((N < 1))
 {
     Console.WriteLine("Введено недопутимое число (меньше 1 или больше 1290), выполнение программы прервано.");
     return;
 }
+
+PrintTableOfCube(N);
+Console.WriteLine();
+Author;
