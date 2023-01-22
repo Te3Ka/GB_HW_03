@@ -18,4 +18,11 @@ void Author()
 
 Console.WriteLine("Программа показывает таблицу кубов от 1 до указанного числа");
 Console.Write("Введите число, но не более 1290: ");
-int N = Convert.ToInt32(COnsole.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
+
+// Проверка введённого числа на допустимые значения
+if ((N < 1) || (N > 1290))
+{
+    Console.WriteLine("Введено недопутимое число (меньше 1 или больше 1290), выполнение программы прервано.");
+    return;
+}
