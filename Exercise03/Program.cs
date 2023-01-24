@@ -36,10 +36,10 @@ Console.Write("Введите число больше 1: ");
 int N = Convert.ToInt32(Console.ReadLine());
 if ((N < 1))
 {
-    Console.WriteLine("Введено недопутимое число (меньше 1 или больше 1290), выполнение программы прервано.");
+    Console.WriteLine("Введено недопутимое число (меньше 1), выполнение программы прервано.");
     return;
 }
 
 PrintTableOfCube(N);
 Console.WriteLine();
-Author;
+Author();
